@@ -1,3 +1,5 @@
+"use client";
+
 //import { Link } from "react-router-dom";
 //import { AnalyticsEvent } from "../../utils/constants";
 //import { analytics } from "../../utils/mixpanel";

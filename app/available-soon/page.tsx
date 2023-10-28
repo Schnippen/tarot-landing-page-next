@@ -7,6 +7,9 @@ import styles from "../App.module.css";
 import googlePlayImage from "../../public/images/google-play.png";
 import Link from "next/link";
 import Image from "next/image";
+import LinkMixpanel from "@/components/LinksMixpanel/LinkMixpanel";
+import { AnalyticsEvent } from "@/utils/constants";
+import GooglePlayButton from "@/components/buttons/GooglePlayButton";
 
 function AvailableSoon() {
   /*   useEffect(() => {
@@ -31,16 +34,12 @@ function AvailableSoon() {
       >
         <div className={styles.terms_of_service_div_container}>
           <article className={styles.terms_of_service_div}>
-            <Link
+            <LinkMixpanel
               href="/"
-              className={styles.Link}
-              /* onClick={() =>
-                analytics.event(AnalyticsEvent.go_to_home_page_available_soon)
-              } */
-              title="Go To Home Page"
-            >
-              Go to home page
-            </Link>
+              text="Go to Home Page"
+              title="Go to home page"
+              event={AnalyticsEvent.go_to_home_page_pressed}
+            />
             <h1
               style={{
                 fontFamily: "Cinzel",
@@ -52,22 +51,7 @@ function AvailableSoon() {
             </h1>
             <div className={styles.available_soon_container}>
               <p>Check out the Android version of this app</p>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.mobiletarotandroid"
-                /*  onClick={() =>
-                  analytics.event(
-                    AnalyticsEvent.google_play_available_soon_pressed
-                  )
-                } */
-              >
-                <Image
-                  src={googlePlayImage}
-                  alt="Get on Google Play"
-                  height={80}
-                  width={206.7}
-                  title="Get on Google Play"
-                ></Image>
-              </a>
+              <GooglePlayButton />
             </div>
           </article>
         </div>

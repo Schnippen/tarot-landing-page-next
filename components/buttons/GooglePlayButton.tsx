@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 //import { AnalyticsEvent } from '../../utils/constants';
 //import { analytics } from '../../utils/mixpanel';
