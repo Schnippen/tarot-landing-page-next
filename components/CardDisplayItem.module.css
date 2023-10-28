@@ -1,0 +1,35 @@
+.item_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+.left_container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right_container {
+  width: 50%;
+  text-align: justify;
+}
+.container_position {
+  flex-direction: row-reverse;
+}
+@media (max-width: 1024px) {
+  .item_container {
+    flex-direction: column;
+  }
+  .left_container {
+    width: 100%;
+  }
+  .right_container {
+    width: 100%;
+  }
+  .right_container > p {
+    padding: 0 16px;
+    text-align: justify;
+  }
+}
