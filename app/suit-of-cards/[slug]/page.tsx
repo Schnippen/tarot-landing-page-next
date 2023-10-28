@@ -17,11 +17,11 @@ import {
 import Link from "next/link";
 import { TarotRoutes } from "@/app/data/TarotRoutesData";
 
-export async function generateStaticParams() {
+/* export async function generateStaticParams() {
   return TarotRoutes.map((post: string) => ({
     slug: post,
   }));
-}
+} */
 export async function generateMetadata({
   params,
 }: {
@@ -36,6 +36,7 @@ export async function generateMetadata({
   };
 }
 function SuitOf({ params }: { params: { slug: string } }) {
+  //console.log(params.slug);
   let link = "/suit-of-cards/" + params.slug;
   const SuitNumber = RoutesSuitMinorArcana.indexOf(link);
 
