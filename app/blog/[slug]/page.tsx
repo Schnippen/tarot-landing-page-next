@@ -26,19 +26,25 @@ export async function generateMetadata({
   const CardNumber = TarotRoutes.indexOf(link);
   return {
     title:
-      TarotCardsAllFullDescriptionData[CardNumber].tooltip + " " + "Meaning",
-    description: CardsMetaTagsData[CardNumber],
+      TarotCardsAllFullDescriptionData[TarotRoutes.indexOf(link)].tooltip +
+      " " +
+      "Meaning",
+    description: CardsMetaTagsData[TarotRoutes.indexOf(link)],
   };
 }
 
 function TarotCardFullDescription({ params }: { params: { slug: string } }) {
   let link = "/blog/" + params.slug;
-  const CardNumber = TarotRoutes.indexOf(link);
+  //const CardNumber = TarotRoutes.indexOf(link);
 
   return (
     <main className={styles.main}>
       <div className={styles.article_container}>
-        <Article title={TarotCardsAllFullDescriptionData[CardNumber].CardName}>
+        <Article
+          title={
+            TarotCardsAllFullDescriptionData[TarotRoutes.indexOf(link)].CardName
+          }
+        >
           <div
             style={{
               display: "flex",
@@ -46,27 +52,42 @@ function TarotCardFullDescription({ params }: { params: { slug: string } }) {
               alignItems: "center",
             }}
           >
-            <Card img={TarotCardsPhotosAll[CardNumber]} />
+            <Card img={TarotCardsPhotosAll[TarotRoutes.indexOf(link)]} />
           </div>
-          {TarotCardsAllFullDescriptionData[CardNumber].SubTitle}
-          {TarotCardsAllFullDescriptionData[CardNumber].Introduction}
+          {TarotCardsAllFullDescriptionData[TarotRoutes.indexOf(link)].SubTitle}
+          {
+            TarotCardsAllFullDescriptionData[TarotRoutes.indexOf(link)]
+              .Introduction
+          }
           <div style={{ width: "100%" }}>
             <Separator marginHeight={48} />
           </div>
-          {TarotCardsAllFullDescriptionData[CardNumber].SymbolismTitle}
-          {TarotCardsAllFullDescriptionData[CardNumber].Symbolism}
+          {
+            TarotCardsAllFullDescriptionData[TarotRoutes.indexOf(link)]
+              .SymbolismTitle
+          }
+          {
+            TarotCardsAllFullDescriptionData[TarotRoutes.indexOf(link)]
+              .Symbolism
+          }
         </Article>
 
         <Article
-          title={TarotCardsAllFullDescriptionData[CardNumber].CardMeaning}
+          title={
+            TarotCardsAllFullDescriptionData[TarotRoutes.indexOf(link)]
+              .CardMeaning
+          }
         >
-          {TarotCardsAllFullDescriptionData[CardNumber].CardMeaningArticle}
+          {
+            TarotCardsAllFullDescriptionData[TarotRoutes.indexOf(link)]
+              .CardMeaningArticle
+          }
         </Article>
         <span style={{ width: "100%", margin: "24px" }}></span>
         <TarotMeaningsExpositionContainer />
         <span style={{ width: "100%", margin: "24px" }}></span>
         <Article title="Card comparisons">
-          {TarotCardsComparisionsData[CardNumber]()}
+          {TarotCardsComparisionsData[TarotRoutes.indexOf(link)]()}
         </Article>
       </div>
     </main>

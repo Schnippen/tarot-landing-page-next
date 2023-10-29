@@ -16,8 +16,8 @@ import {
 } from "../../data/CardsMetaTagsData";
 import Link from "next/link";
 import { TarotRoutes } from "@/app/data/TarotRoutesData";
-
-/* export async function generateStaticParams() {
+/* 
+export async function generateStaticParams() {
   return TarotRoutes.map((post: string) => ({
     slug: post,
   }));
@@ -31,57 +31,93 @@ export async function generateMetadata({
   const SuitNumber = RoutesSuitMinorArcana.indexOf(link);
 
   return {
-    title: SuitsNamesMetaTagsData[SuitNumber],
-    description: SuitsMetaTagsData[SuitNumber],
+    title: SuitsNamesMetaTagsData[RoutesSuitMinorArcana.indexOf(link)],
+    description: SuitsMetaTagsData[RoutesSuitMinorArcana.indexOf(link)],
   };
 }
 function SuitOf({ params }: { params: { slug: string } }) {
-  //console.log(params.slug);
+  console.log(params.slug);
   let link = "/suit-of-cards/" + params.slug;
   const SuitNumber = RoutesSuitMinorArcana.indexOf(link);
 
   return (
     <main className={styles.main}>
       <div className={styles.article_container}>
-        <Article title={SuitOfArticlesData[SuitNumber].SuitName}>
-          {SuitOfArticlesData[SuitNumber].SuitFirstTitle}
-          {SuitOfArticlesData[SuitNumber].SuitFirstArticle}
+        <Article
+          title={
+            SuitOfArticlesData[RoutesSuitMinorArcana.indexOf(link)].SuitName
+          }
+        >
+          {
+            SuitOfArticlesData[RoutesSuitMinorArcana.indexOf(link)]
+              .SuitFirstTitle
+          }
+          {
+            SuitOfArticlesData[RoutesSuitMinorArcana.indexOf(link)]
+              .SuitFirstArticle
+          }
           <div style={{ width: "100%" }}>
             <Separator marginHeight={48} />
           </div>
-          {SuitOfArticlesData[SuitNumber].SuitSecondTitle}
-          {SuitOfArticlesData[SuitNumber].SuitSecondArticle}
+          {
+            SuitOfArticlesData[RoutesSuitMinorArcana.indexOf(link)]
+              .SuitSecondTitle
+          }
+          {
+            SuitOfArticlesData[RoutesSuitMinorArcana.indexOf(link)]
+              .SuitSecondArticle
+          }
           <Separator marginHeight={48} />
-          {SuitOfArticlesData[SuitNumber].SuitThirdTitle}
-          {SuitOfArticlesData[SuitNumber].SuitThirdArticle}
+          {
+            SuitOfArticlesData[RoutesSuitMinorArcana.indexOf(link)]
+              .SuitThirdTitle
+          }
+          {
+            SuitOfArticlesData[RoutesSuitMinorArcana.indexOf(link)]
+              .SuitThirdArticle
+          }
           <Separator marginHeight={48} />
-          {SuitOfArticlesData[SuitNumber].SuitFourthTitle}
-          {SuitOfArticlesData[SuitNumber].SuitFourthArticle}
+          {
+            SuitOfArticlesData[RoutesSuitMinorArcana.indexOf(link)]
+              .SuitFourthTitle
+          }
+          {
+            SuitOfArticlesData[RoutesSuitMinorArcana.indexOf(link)]
+              .SuitFourthArticle
+          }
         </Article>
         <span style={{ width: "100%", margin: "24px" }}></span>
         <TarotMeaningsExpositionContainer />
         <span style={{ width: "100%", margin: "24px" }}></span>
 
-        <Article title={SuitOfArticlesData[SuitNumber].SuitName}>
+        <Article
+          title={
+            SuitOfArticlesData[RoutesSuitMinorArcana.indexOf(link)].SuitName
+          }
+        >
           <ul style={{ padding: "0px" }}>
-            {SuitOfAllCards[SuitNumber].slice(0, 7).map((item, index) => (
-              <>
-                <CardDisplayItem
-                  alt={item.alt}
-                  tooltip={item.tooltip}
-                  paragraphElement={item.description}
-                  img={item.image}
-                  index={item.number}
-                  name={item.name}
-                  href={item.href}
-                />
-                {SuitOfAllCards[SuitNumber].length / 2 === index + 1 ? (
-                  <></>
-                ) : (
-                  <Separator marginHeight={48} />
-                )}
-              </>
-            ))}
+            {SuitOfAllCards[RoutesSuitMinorArcana.indexOf(link)]
+              .slice(0, 7)
+              .map((item, index) => (
+                <>
+                  <CardDisplayItem
+                    alt={item.alt}
+                    tooltip={item.tooltip}
+                    paragraphElement={item.description}
+                    img={item.image}
+                    index={item.number}
+                    name={item.name}
+                    href={item.href}
+                  />
+                  {SuitOfAllCards[RoutesSuitMinorArcana.indexOf(link)].length /
+                    2 ===
+                  index + 1 ? (
+                    <></>
+                  ) : (
+                    <Separator marginHeight={48} />
+                  )}
+                </>
+              ))}
           </ul>
         </Article>
         <span style={{ width: "100%", margin: "24px" }}></span>
@@ -89,24 +125,28 @@ function SuitOf({ params }: { params: { slug: string } }) {
         <span style={{ width: "100%", margin: "24px" }}></span>
         <Article title="">
           <ul style={{ padding: "0px" }}>
-            {SuitOfAllCards[SuitNumber].slice(7, 14).map((item, index) => (
-              <>
-                <CardDisplayItem
-                  alt={item.alt}
-                  tooltip={item.tooltip}
-                  paragraphElement={item.description}
-                  img={item.image}
-                  index={item.number}
-                  name={item.name}
-                  href={item.href}
-                />
-                {SuitOfAllCards[SuitNumber].length === index + 1 ? (
-                  <></>
-                ) : (
-                  <Separator marginHeight={48} />
-                )}
-              </>
-            ))}
+            {SuitOfAllCards[RoutesSuitMinorArcana.indexOf(link)]
+              .slice(7, 14)
+              .map((item, index) => (
+                <>
+                  <CardDisplayItem
+                    alt={item.alt}
+                    tooltip={item.tooltip}
+                    paragraphElement={item.description}
+                    img={item.image}
+                    index={item.number}
+                    name={item.name}
+                    href={item.href}
+                  />
+                  {SuitOfAllCards[RoutesSuitMinorArcana.indexOf(link)]
+                    .length ===
+                  index + 1 ? (
+                    <></>
+                  ) : (
+                    <Separator marginHeight={48} />
+                  )}
+                </>
+              ))}
             <p className={styles.paragraph} style={{ textAlign: "center" }}>
               The end of the This Suit of Cards marks the beginning of another
               journey -{" "}
