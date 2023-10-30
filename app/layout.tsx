@@ -5,8 +5,7 @@ import styles from "./App.module.css";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
-import Script from "next/script";
-import { AnalyticsEvent } from "@/utils/constants";
+
 
 export const metadata: Metadata = {
   title: "Tarot Reader App",
