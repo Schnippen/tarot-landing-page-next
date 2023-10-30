@@ -13,7 +13,7 @@ function NotFound() {
         width: "100vw",
         height: "100vh",
         textAlign: "center",
-        fontFamily: "Cinzel",
+        fontFamily: "var(--Cinzel)",
         fontSize: "2em",
         textShadow: "var(--textShadowOpacity)",
         userSelect: "none",

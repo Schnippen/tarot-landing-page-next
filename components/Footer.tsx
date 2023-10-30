@@ -43,7 +43,7 @@ function Footer() {
                 width: "300px",
                 cursor: "pointer",
                 display: "flex",
-                fontFamily: "Cinzel",
+                fontFamily: "var(--Cinzel)",
                 fontWeight: "bold",
                 color: "var(--fontColor)",
                 fontSize: "22px",

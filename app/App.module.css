@@ -26,7 +26,7 @@
   font-size: 1.8em;
 }
 .header_title {
-  font-family: "Cinzel";
+  font-family: var(--Cinzel);
   cursor: pointer;
   user-select: none;
 }
@@ -42,7 +42,7 @@
   flex-wrap: unset;
   font-weight: 400;
   height: 650px;
-  font-family: "Lora";
+  font-family: var(--Lora);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -105,7 +105,7 @@
 
 .exposition_right > h2 {
   font-size: 1.5em;
-  font-family: "Lora";
+  font-family: var(--Lora);
   padding: 0 20px 0 40px;
   text-align: center;
   color: var(--textShadow);
@@ -114,14 +114,14 @@
 .exposition_right > ul > li {
   font-size: 1.2em;
   margin-bottom: 20px;
-  font-family: "Lora";
+  font-family: var(--Lora);
   padding: 0 10px;
   text-align: left;
   margin: 12px 0;
   color: var(--textShadow);
 }
 .exposition_right_paragraph {
-  font-family: "Lora";
+  font-family: var(--Lora);
   color: var(--textShadow);
   padding: 0 10px;
 }
@@ -163,7 +163,7 @@
 }
 .article_title {
   text-align: center;
-  font-family: "Cinzel";
+  font-family: var(--Cinzel);
   font-size: 2em;
   text-shadow: var(--textShadowOpacity);
   margin-block-start: 0.53em;
@@ -171,10 +171,10 @@
 }
 .ArticleItem_title {
   font-size: 1.4em;
-  font-family: "Cinzel";
+  font-family: var(--Cinzel);
 }
 .ArticleItem_paragraph {
-  font-family: "Lora";
+  font-family: var(--Lora);
   list-style: none;
   list-style-position: outside;
 }
@@ -185,7 +185,7 @@
   width: 100%;
 }
 .panels_container_title {
-  font-family: "Cinzel";
+  font-family: var(--Cinzel);
   text-align: center;
   font-size: 2em;
   margin-block-start: 0.83em;
@@ -221,7 +221,7 @@
   max-width: 600px;
   flex-direction: column;
   padding: 24px 24px;
-  font-family: "Lora";
+  font-family: var(--Lora);
   text-align: center;
   line-height: 28px;
   font-size: 1rem;
@@ -269,7 +269,7 @@
   max-width: 700px;
   min-width: 40%;
   background-color: var(--beige);
-  font-family: Lora;
+  font-family: var(--Lora);
   border-radius: 24px;
   padding: 24px;
   line-height: 1.5;
@@ -285,7 +285,7 @@
   max-width: 700px;
   min-width: 40%;
   background-color: var(--beige);
-  font-family: Lora;
+  font-family: var(--Lora);
   border-radius: 24px;
   padding: 24px;
   line-height: 1.5;
@@ -299,11 +299,11 @@
 
 .title {
   font-size: 1.4em;
-  font-family: "Cinzel";
+  font-family: var(--Cinzel);
 }
 
 .paragraph {
-  font-family: Lora;
+  font-family: var(--Lora);
   line-height: 1.4rem;
 }
 
@@ -472,7 +472,6 @@
   }
   .privacy_policy_div {
     width: 300px;
-
   }
   .footer_container {
     margin: 24px 0;

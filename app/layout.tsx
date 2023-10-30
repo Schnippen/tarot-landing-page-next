@@ -1,12 +1,20 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Cinzel, Lora } from "next/font/google";
 import styles from "./App.module.css";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
-
-
+const lora = Lora({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--Lora",
+});
+const cinzel = Cinzel({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--Cinzel",
+});
 export const metadata: Metadata = {
   title: "Tarot Reader App",
   description:
@@ -20,7 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${styles.someOtherClass}`}>
+      <body
+        className={`${inter.className} ${lora.variable} ${cinzel.variable}`}
+      >
         <header className={styles.header}>
           <h1 className={styles.header_title}>
             <Link href="/" className={styles.headerLink}>

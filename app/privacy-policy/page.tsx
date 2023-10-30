@@ -38,7 +38,7 @@ function PrivacyPolicy() {
             />
             <h1
               style={{
-                fontFamily: "Cinzel",
+                fontFamily: "var(--Cinzel)",
                 fontSize: "1.8em",
                 textAlign: "center",
               }}
