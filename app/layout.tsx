@@ -12,7 +12,7 @@ const lora = Lora({
 });
 const cinzel = Cinzel({
   subsets: ["latin"],
-  weight: "400",
+  weight: "700",
   variable: "--Cinzel",
 });
 export const metadata: Metadata = {
