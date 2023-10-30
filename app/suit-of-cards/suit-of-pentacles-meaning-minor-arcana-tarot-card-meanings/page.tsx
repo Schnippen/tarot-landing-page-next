@@ -28,8 +28,8 @@ export async function generateMetadata({
   params: { slug: string };
 }) {
   return {
-    title: SuitsNamesMetaTagsData[0],
-    description: SuitsMetaTagsData[0],
+    title: SuitsNamesMetaTagsData[3],
+    description: SuitsMetaTagsData[3],
   };
 }
 function SuitOf({ params }: { params: { slug: string } }) {
@@ -40,28 +40,28 @@ function SuitOf({ params }: { params: { slug: string } }) {
   return (
     <main className={styles.main}>
       <div className={styles.article_container}>
-        <Article title={SuitOfArticlesData[0].SuitName}>
-          {SuitOfArticlesData[0].SuitFirstTitle}
-          {SuitOfArticlesData[0].SuitFirstArticle}
+        <Article title={SuitOfArticlesData[3].SuitName}>
+          {SuitOfArticlesData[3].SuitFirstTitle}
+          {SuitOfArticlesData[3].SuitFirstArticle}
           <div style={{ width: "100%" }}>
             <Separator marginHeight={48} />
           </div>
-          {SuitOfArticlesData[0].SuitSecondTitle}
-          {SuitOfArticlesData[0].SuitSecondArticle}
+          {SuitOfArticlesData[3].SuitSecondTitle}
+          {SuitOfArticlesData[3].SuitSecondArticle}
           <Separator marginHeight={48} />
-          {SuitOfArticlesData[0].SuitThirdTitle}
-          {SuitOfArticlesData[0].SuitThirdArticle}
+          {SuitOfArticlesData[3].SuitThirdTitle}
+          {SuitOfArticlesData[3].SuitThirdArticle}
           <Separator marginHeight={48} />
-          {SuitOfArticlesData[0].SuitFourthTitle}
-          {SuitOfArticlesData[0].SuitFourthArticle}
+          {SuitOfArticlesData[3].SuitFourthTitle}
+          {SuitOfArticlesData[3].SuitFourthArticle}
         </Article>
         <span style={{ width: "100%", margin: "24px" }}></span>
         <TarotMeaningsExpositionContainer />
         <span style={{ width: "100%", margin: "24px" }}></span>
 
-        <Article title={SuitOfArticlesData[0].SuitName}>
+        <Article title={SuitOfArticlesData[3].SuitName}>
           <ul style={{ padding: "0px" }}>
-            {SuitOfAllCards[0].slice(0, 7).map((item, index) => (
+            {SuitOfAllCards[3].slice(0, 7).map((item, index) => (
               <>
                 <CardDisplayItem
                   alt={item.alt}
@@ -72,7 +72,7 @@ function SuitOf({ params }: { params: { slug: string } }) {
                   name={item.name}
                   href={item.href}
                 />
-                {SuitOfAllCards[0].length / 2 === index + 1 ? (
+                {SuitOfAllCards[3].length / 2 === index + 1 ? (
                   <></>
                 ) : (
                   <Separator marginHeight={48} />
@@ -86,7 +86,7 @@ function SuitOf({ params }: { params: { slug: string } }) {
         <span style={{ width: "100%", margin: "24px" }}></span>
         <Article title="">
           <ul style={{ padding: "0px" }}>
-            {SuitOfAllCards[0].slice(7, 14).map((item, index) => (
+            {SuitOfAllCards[3].slice(7, 14).map((item, index) => (
               <>
                 <CardDisplayItem
                   alt={item.alt}
@@ -97,7 +97,7 @@ function SuitOf({ params }: { params: { slug: string } }) {
                   name={item.name}
                   href={item.href}
                 />
-                {SuitOfAllCards[0].length === index + 1 ? (
+                {SuitOfAllCards[3].length === index + 1 ? (
                   <></>
                 ) : (
                   <Separator marginHeight={48} />
