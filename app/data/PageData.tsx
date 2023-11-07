@@ -435,15 +435,11 @@ export const PageMetaData: TPageMetaData[] = [
     title: "Tarot Reader - The Tarot Interpretation App",
     description:
       "Unlock insights with Tarot Reader: Accurate tarot readings, card meanings, and spreads. Explore your destiny today!",
-    keywords:
-      "Tarot Reader app Tarot interpretation Tarot card meanings Tarot card spreads Personalized tarot readings Digital divination Question-based tarot Daily guidance Love and career advice Self-reflection Tarot guidance Destiny exploration Tarot wisdom Card interpretation Tarot insights",
   },
   {
-    title: "Tarot Reader - The Tarot Interpretation App",
+    title: "Tarot Reader - The History of Tarot",
     description:
-      "Unlock insights with Tarot Reader: Accurate tarot readings, card meanings, and spreads. Explore your destiny today!",
-    keywords:
-      "Tarot Reader app Tarot interpretation Tarot card meanings Tarot card spreads Personalized tarot readings Digital divination Question-based tarot Daily guidance Love and career advice Self-reflection Tarot guidance Destiny exploration Tarot wisdom Card interpretation Tarot insights",
+      "Delve into the captivating history of Tarot with Tarot Reader, the premier app for accurate tarot readings",
   },
 ];
 
