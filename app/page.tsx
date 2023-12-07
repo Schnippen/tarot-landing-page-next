@@ -87,6 +87,18 @@ function Home() {
                 The History of Tarot
               </Link>
             </li>
+            <li
+              className={styles.paragraph}
+              style={{
+                margin: "32px 0",
+                fontSize: "1.5rem",
+                textAlign: "center",
+              }}
+            >
+              <Link href="/pick-a-card" className={styles.Link}>
+                Pick a Card
+              </Link>
+            </li>
           </ul>
         </Article>
         <article className={styles.panels_container}>

@@ -1,0 +1,28 @@
+.CardListWrapper {
+  display: grid;
+  grid-template-columns: repeat(16, 40px);
+  padding: 0;
+  justify-items: center;
+}
+
+@media (max-width: 875px) {
+  .CardListWrapper {
+    grid-template-columns: repeat(16, 36px);
+  }
+}
+@media (max-width: 758px) {
+  .CardListWrapper {
+    grid-template-columns: repeat(16, 30px);
+  }
+}
+
+@media (max-width: 600px) {
+  .CardListWrapper {
+    grid-template-columns: repeat(8, 30px);
+  }
+}
+@media (max-width: 340px) {
+  .CardListWrapper {
+    grid-template-columns: repeat(6, 30px);
+  }
+}
