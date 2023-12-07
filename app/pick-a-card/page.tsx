@@ -10,7 +10,7 @@ import Exposition from "@/components/Exposition";
 export const metadata: Metadata = {
   title: "Pick a Random Tarot Card - Discover Its Meaning",
   description:
-    "Experience the magic of tarot! Choose a random card and unveil its profound meaning. Explore insights and guidance for your life's journey.",
+    "Experience the magic of tarot! Choose a random card and unveil its profound meaning. Use Tarot as a powerful tool to anchor yourself in the present, fostering deep awareness of the moment and your surroundings.One card Tarot reading, meditation, mindfulness, present moment, focus, awareness, daily practice, Tarot tool, self-reflection.",
 };
 
 function page() {
@@ -24,9 +24,9 @@ function page() {
           <div style={{ width: "100%" }}>
             <Separator marginHeight={48} />
           </div>
-          <h3 className={styles.title} style={{ textAlign: "center" }}>
+          <h2 className={styles.title} style={{ textAlign: "center" }}>
             Discover the Rich Symbolism and Archetypes within Tarot Cards
-          </h3>
+          </h2>
           <p className={styles.paragraph}>
             The practice of picking a random card from a tarot deck has been a
             longstanding tradition in the world of tarot reading and divination.
@@ -43,9 +43,9 @@ function page() {
           <div style={{ width: "100%" }}>
             <Separator marginHeight={48} />
           </div>
-          <h3 className={styles.title} style={{ textAlign: "center" }}>
+          <h2 className={styles.title} style={{ textAlign: "center" }}>
             Use Our Tarot Reader App for Tailored Guidance
-          </h3>
+          </h2>
           <p className={styles.paragraph}>
             In the world of tarot, interpretations vary.<br></br>
             <br></br> That's why we encourage you to use our Tarot Reader App
