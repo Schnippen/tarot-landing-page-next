@@ -89,6 +89,7 @@ function TarotMajorArcana() {
                   index={item.number}
                   name={item.name}
                   href={item.href}
+                  key={item.name}
                 />
                 {MajorArcanaCardsData.length / 2 === index + 1 ? (
                   <></>
