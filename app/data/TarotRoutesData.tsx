@@ -101,7 +101,7 @@ export const RoutesSuitMinorArcana = [
 
 export const PagesRoutes = ["/tarot-interpretation-app", "/history-of-tarot"];
 //HISTORY
-// /history-of-tarot
+// /history-of-tarot  /pick-a-card
 //tarot card meanings major arcana
 
 export const TarotRoutes = [
