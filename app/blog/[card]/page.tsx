@@ -13,14 +13,15 @@ import { TarotCardsPhotosAll } from '@/public/images/cards/TarotCardPhotos';
 
 function TarotCardFullDescription({ params }: { params:{card:string} }) {
     //console.log(params.card, TarotRoutes2.indexOf("/"+params.card))
-
+    //console.log(params)
  const TarotIndex = TarotRoutes2.indexOf("/"+params.card)>=0? TarotRoutes2.indexOf("/"+params.card):0;
 //console.log("TarotIndex",TarotIndex)
  const metadata: Metadata = {
     title: TarotCardsAllFullDescriptionData[TarotIndex].tooltip + " " + "Meaning",
     description: CardsMetaTagsData[TarotIndex],
     }
-     
+     //console.log(metadata.title)
+     //console.log(metadata.description)
    return (
     <main className={styles.main}>
       <div className={styles.article_container}>

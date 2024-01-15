@@ -177,11 +177,12 @@ function TarotMinorArcana() {
                   index={item.number}
                   name={item.name}
                   href={item.href}
+                  key={item.name}
                 />
                 {TarotCardsMinorArcanaSuits.length === index + 1 ? (
                   <></>
                 ) : (
-                  <Separator marginHeight={48} />
+                  <Separator marginHeight={48}/>
                 )}
               </>
             ))}
