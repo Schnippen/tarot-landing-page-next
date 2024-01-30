@@ -8,8 +8,8 @@ import screen7 from "../public/images/screens/screen7.webp";
 import screen8 from "../public/images/screens/screen8.webp";
 import screen9 from "../public/images/screens/screen9.webp";
 import screen10 from "../public/images/screens/screen10.webp";
-//import screen11 from "../public/images/screens/screen11.webp";
-//import screen12 from "../public/images/screens/screen12.webp";
+import screen11 from "../public/images/screens/screen11.webp";
+import screen12 from "../public/images/screens/screen12.webp";
 
 export const ScreenshotArray = [
   screen1,
@@ -22,4 +22,6 @@ export const ScreenshotArray = [
   screen8,
   screen9,
   screen10,
+  screen11,
+  screen12,
 ];
